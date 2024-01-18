@@ -33,6 +33,13 @@
   font-weight: var(--font-medium);
 }
 
+.about__title-link {
+  text-decoration: none;
+  color: var(--title-color);
+}
+.about__title-link:hover {
+  color: var(--title-color-dark);
+}
 .about__subtitle {
   font-size: var(--tiny-font-size);
 }

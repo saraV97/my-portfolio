@@ -8,7 +8,7 @@ const Qualification = () => {
     setToggleState(index);
   };
   return (
-    <section className="qualification section">
+    <section className="qualification section" id="qualification">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My personel journey</span>
 
@@ -23,7 +23,7 @@ const Qualification = () => {
             onClick={() => toggleTab(1)}
           >
             <i className="uil uil-graduation-cap qualification__icon"></i>
-            Education
+            Experience
           </div>
 
           <div
@@ -35,7 +35,7 @@ const Qualification = () => {
             onClick={() => toggleTab(2)}
           >
             <i className="uil uil-briefcase-alt qualification__icon"></i>
-            Experience
+            Education
           </div>
         </div>
         <div className="qualification__sections">

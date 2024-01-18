@@ -10,6 +10,15 @@ const Services = () => {
       <div className="services__container container grid">
         <div className="services__content">
           <div>
+            <i className="uil uil-edit services__icon"></i>
+            <h3 className="services__title">
+              Website <br /> Development
+            </h3>
+          </div>
+        </div>
+
+        <div className="services__content">
+          <div>
             <i className="uil uil-web-grid services__icon"></i>
             <h3 className="services__title">
               Product <br /> Design
@@ -22,15 +31,6 @@ const Services = () => {
             <i className="uil uil-arrow services__icon"></i>
             <h3 className="services__title">
               UI / UX <br /> Design
-            </h3>
-          </div>
-        </div>
-
-        <div className="services__content">
-          <div>
-            <i className="uil uil-edit services__icon"></i>
-            <h3 className="services__title">
-              Website <br /> Development
             </h3>
           </div>
         </div>
