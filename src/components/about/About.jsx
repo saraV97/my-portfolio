@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section className="about section" id="about">
       <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">My Introduction</span>
+      <span className="section__subtitle">A brief intro, who am I?</span>
 
       <div className="about__container container grid">
         <img src={AboutImg} alt="" className="about__img" />
@@ -16,9 +16,11 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-            Frontend developer, I create web pages with UI / UX user interface,
-            I have years of experience and many clients are happy with the
-            projects carried out.
+            I am an independant Web Developer based in Chennai, India.
+            <br />
+            <br />I specialize in crafting elevated, intuitive designs for
+            startups and small businesses to help them stand out in the digital
+            landscape with a powerful impact. 😎
           </p>
 
           <a download="" href={CV} className="button button--flex">

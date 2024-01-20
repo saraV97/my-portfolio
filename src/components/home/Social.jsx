@@ -1,32 +1,55 @@
 import React from "react";
+import { motion } from "framer-motion";
+const socialVariants = {
+  initial: {
+    x: -500,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const Social = () => {
   return (
-    <div className="home__social">
-      <a
+    <motion.div
+      className="home__social"
+      variants={socialVariants}
+      initial="initial"
+      animate="animate"
+    >
+      <motion.a
         href="https://linkedin.com/"
         className="home__social-icon"
         target="_blank"
+        variants={socialVariants}
       >
         <i class="uil uil-linkedin"></i>
-      </a>
+      </motion.a>
 
-      <a
+      <motion.a
         href="https://github.com/"
         className="home__social-icon"
         target="_blank"
+        variants={socialVariants}
       >
         <i class="uil uil-github"></i>
-      </a>
+      </motion.a>
 
-      <a
+      <motion.a
         href="https://www.instagram.com/"
         className="home__social-icon"
         target="_blank"
+        variants={socialVariants}
       >
         <i class="uil uil-instagram-alt"></i>
-      </a>
-    </div>
+      </motion.a>
+    </motion.div>
   );
 };
 

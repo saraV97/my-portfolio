@@ -19,6 +19,10 @@
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
+.nav__logo {
+  font-weight: bolder;
+  font-size: 20px;
+}
 
 .nav__list {
   display: flex;

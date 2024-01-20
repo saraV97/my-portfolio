@@ -1,9 +1,31 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const textVariants = {
+  initial: {
+    opacity: 0,
+    y: 75,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const Data = () => {
   return (
-    <div className="home__data">
-      <h1 className="home__title">
+    <motion.div
+      className="home__data"
+      variants={textVariants}
+      initial="initial"
+      animate="animate"
+      transition={{ duration: 0.5, delay: 0.25 }}
+    >
+      <motion.h1 className="home__title" variants={textVariants}>
         Hey, I'm Saravanan
         <svg
           width="36"
@@ -54,13 +76,19 @@ const Data = () => {
             fill="#EBA352"
           ></path>
         </svg>
-      </h1>
-      <h3 className="home__subtitle">Fullstack Developer</h3>
-      <p className="home_description">
-        I'm a web developer based in Chennai, and I'm very passionate and
-        dedicated to my work.
-      </p>
-      <a href="#contact" className="button button--flex">
+      </motion.h1>
+      <motion.h3 className="home__subtitle" variants={textVariants}>
+        Fullstack Developer
+      </motion.h3>
+      <motion.p className="home_description" variants={textVariants}>
+        I create elevating digital experiences that inspire and connect with
+        people through development and design.
+      </motion.p>
+      <motion.a
+        href="#contact"
+        className="button button--flex"
+        variants={textVariants}
+      >
         {" "}
         Say Hello
         <svg
@@ -80,8 +108,8 @@ const Data = () => {
             fill="var(--container-color)"
           ></path>
         </svg>
-      </a>
-    </div>
+      </motion.a>
+    </motion.div>
   );
 };
 
