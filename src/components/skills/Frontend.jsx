@@ -1,4 +1,6 @@
 import React from "react";
+import { staggerVariants } from "../animation/Animation";
+import { motion } from "framer-motion";
 
 const Frontend = () => {
   return (
@@ -6,61 +8,67 @@ const Frontend = () => {
       <h3 className="skills__title">Frontend Development</h3>
 
       <div className="skills__box">
-        <div className="skills__group">
-          <div className="skills__data">
+        <motion.div
+          className="skills__group"
+          variants={staggerVariants}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
+          <motion.div className="skills__data" variants={staggerVariants}>
             <i class="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skills__name">HTML</h3>
               <span className="skills__level">Basic</span>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="skills__data">
+          <motion.div className="skills__data" variants={staggerVariants}>
             <i class="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skills__name">CSS</h3>
               <span className="skills__level">Intermediate</span>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="skills__data">
+          <motion.div className="skills__data" variants={staggerVariants}>
             <i class="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skills__name">Javascript</h3>
               <span className="skills__level">Intermediate</span>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="skills__data">
+          <motion.div className="skills__data" variants={staggerVariants}>
             <i class="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skills__name">Git</h3>
               <span className="skills__level">Basic</span>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="skills__data">
+          <motion.div className="skills__data" variants={staggerVariants}>
             <i class="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skills__name">React</h3>
               <span className="skills__level">Intemediate</span>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="skills__data">
+          <motion.div className="skills__data" variants={staggerVariants}>
             <i class="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skills__name">Python</h3>
               <span className="skills__level">Intemediate</span>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

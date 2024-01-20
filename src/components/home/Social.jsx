@@ -28,6 +28,9 @@ const Social = () => {
         className="home__social-icon"
         target="_blank"
         variants={socialVariants}
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9 }}
+        transition={{ type: "spring", stiffness: 400, damping: 17 }}
       >
         <i class="uil uil-linkedin"></i>
       </motion.a>
@@ -37,6 +40,9 @@ const Social = () => {
         className="home__social-icon"
         target="_blank"
         variants={socialVariants}
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9 }}
+        transition={{ type: "spring", stiffness: 400, damping: 17 }}
       >
         <i class="uil uil-github"></i>
       </motion.a>
@@ -46,6 +52,9 @@ const Social = () => {
         className="home__social-icon"
         target="_blank"
         variants={socialVariants}
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9 }}
+        transition={{ type: "spring", stiffness: 400, damping: 17 }}
       >
         <i class="uil uil-instagram-alt"></i>
       </motion.a>

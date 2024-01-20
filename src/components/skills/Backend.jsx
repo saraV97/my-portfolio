@@ -1,4 +1,6 @@
 import React from "react";
+import { staggerVariantsRight } from "../animation/Animation";
+import { motion } from "framer-motion";
 
 const Backend = () => {
   return (
@@ -6,43 +8,49 @@ const Backend = () => {
       <h3 className="skills__title">Backend Development</h3>
 
       <div className="skills__box">
-        <div className="skills__group">
-          <div className="skills__data">
+        <motion.div
+          className="skills__group"
+          variants={staggerVariantsRight}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
+          <motion.div className="skills__data" variants={staggerVariantsRight}>
             <i class="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skills__name">NodeJS</h3>
               <span className="skills__level">Basic</span>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="skills__data">
+          <motion.div className="skills__data" variants={staggerVariantsRight}>
             <i class="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skills__name">MySQL</h3>
               <span className="skills__level">Intemediate</span>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="skills__data">
+          <motion.div className="skills__data" variants={staggerVariantsRight}>
             <i class="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skills__name">Firebase</h3>
               <span className="skills__level">Intemediate</span>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="skills__data">
+          <motion.div className="skills__data" variants={staggerVariantsRight}>
             <i class="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skills__name">Python</h3>
               <span className="skills__level">Intemediate</span>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

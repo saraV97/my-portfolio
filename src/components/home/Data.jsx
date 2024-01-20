@@ -10,8 +10,9 @@ const textVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1,
-      staggerChildren: 0.1,
+      duration: 0.7,
+      // delay: 0.25,
+      staggerChildren: 0.3,
     },
   },
 };
@@ -23,7 +24,7 @@ const Data = () => {
       variants={textVariants}
       initial="initial"
       animate="animate"
-      transition={{ duration: 0.5, delay: 0.25 }}
+      // transition={{ duration: 0.5, delay: 0.25 }}
     >
       <motion.h1 className="home__title" variants={textVariants}>
         Hey, I'm Saravanan

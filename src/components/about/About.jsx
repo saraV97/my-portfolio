@@ -3,27 +3,57 @@ import "./about.scss";
 import AboutImg from "../../assets/Screenshot_20220318-182050~2.jpg";
 import CV from "../../assets/John-Cv.pdf";
 import Info from "./info";
+import { animate, delay, motion } from "framer-motion";
+import { titleVariants } from "../animation/Animation";
 
 const About = () => {
   return (
-    <section className="about section" id="about">
-      <h2 className="section__title">About Me</h2>
-      <span className="section__subtitle">A brief intro, who am I?</span>
+    <motion.section
+      className="about section"
+      id="about"
+      variants={titleVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+    >
+      <motion.h2
+        className="section__title"
+        variants={titleVariants}
+        // initial="initial"
+        // whileInView="animate"
+        // viewport={{ once: true }}
+      >
+        About Me
+      </motion.h2>
+      <motion.span
+        className="section__subtitle"
+        variants={titleVariants}
+        // initial="initial"
+        // whileInView="animate"
+        // viewport={{ once: true }}
+      >
+        A brief intro, who am I?
+      </motion.span>
 
       <div className="about__container container grid">
         <img src={AboutImg} alt="" className="about__img" />
         <div className="about__data">
           <Info />
 
-          <p className="about__description">
+          <motion.p className="about__description" variants={titleVariants}>
             I am an independant Web Developer based in Chennai, India.
             <br />
             <br />I specialize in crafting elevated, intuitive designs for
             startups and small businesses to help them stand out in the digital
             landscape with a powerful impact. 😎
-          </p>
+          </motion.p>
 
-          <a download="" href={CV} className="button button--flex">
+          <motion.a
+            download=""
+            href={CV}
+            className="button button--flex"
+            variants={titleVariants}
+          >
             Download CV
             <svg
               class="button__icon"
@@ -50,10 +80,10 @@ const About = () => {
                 fill="var(--container-color)"
               ></path>
             </svg>
-          </a>
+          </motion.a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

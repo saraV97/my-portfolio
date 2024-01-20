@@ -1,6 +1,13 @@
 import React from "react";
 import "./qualification.scss";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  titleVariants,
+  staggerVariants,
+  staggerVariantsRight,
+  topDownVariants,
+} from "../animation/Animation";
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -8,12 +15,23 @@ const Qualification = () => {
     setToggleState(index);
   };
   return (
-    <section className="qualification section" id="qualification">
-      <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">My personel journey</span>
+    <motion.section
+      className="qualification section"
+      id="qualification"
+      variants={titleVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+    >
+      <motion.h2 className="section__title" variants={titleVariants}>
+        Qualification
+      </motion.h2>
+      <motion.span className="section__subtitle" variants={titleVariants}>
+        My personel journey
+      </motion.span>
 
       <div className="qualification__container container">
-        <div className="qualification__tabs">
+        <motion.div className="qualification__tabs" variants={titleVariants}>
           <div
             className={
               toggleState === 1
@@ -37,7 +55,7 @@ const Qualification = () => {
             <i className="uil uil-briefcase-alt qualification__icon"></i>
             Education
           </div>
-        </div>
+        </motion.div>
         <div className="qualification__sections">
           <div
             className={
@@ -47,7 +65,7 @@ const Qualification = () => {
             }
           >
             <div className="qualification__data">
-              <div>
+              <motion.div variants={staggerVariants}>
                 <h3 className="qualification__title">Catalog Associate</h3>
                 <span className="qualification__subtitle">
                   Amazon - Chennai
@@ -56,21 +74,21 @@ const Qualification = () => {
                   <i className="uil uil-calendar-alt"> </i>
                   2019 - 2021
                 </div>
-              </div>
+              </motion.div>
 
-              <div>
+              <motion.div variants={topDownVariants}>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
-              </div>
+              </motion.div>
             </div>
 
             <div className="qualification__data">
               <div></div>
-              <div>
+              <motion.div variants={topDownVariants}>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
-              </div>
-              <div>
+              </motion.div>
+              <motion.div variants={staggerVariantsRight}>
                 <h3 className="qualification__title">Automation Engineer</h3>
                 <span className="qualification__subtitle">
                   Amazon - Chennai
@@ -79,11 +97,11 @@ const Qualification = () => {
                   <i className="uil uil-calendar-alt"> </i>
                   2021 - 2022
                 </div>
-              </div>
+              </motion.div>
             </div>
 
             <div className="qualification__data">
-              <div>
+              <motion.div variants={staggerVariants}>
                 <h3 className="qualification__title">Application Engineer</h3>
                 <span className="qualification__subtitle">
                   Amazon - Chennai
@@ -92,27 +110,27 @@ const Qualification = () => {
                   <i className="uil uil-calendar-alt"> </i>
                   2022 - 2023
                 </div>
-              </div>
-              <div>
+              </motion.div>
+              <motion.div variants={topDownVariants}>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
-              </div>
+              </motion.div>
             </div>
 
             <div className="qualification__data">
               <div></div>
-              <div>
+              <motion.div variants={topDownVariants}>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
-              </div>
-              <div>
+              </motion.div>
+              <motion.div variants={staggerVariantsRight}>
                 <h3 className="qualification__title">Web Developer</h3>
                 <span className="qualification__subtitle">Freelance</span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"> </i>
                   2023 - Present
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
 
@@ -124,7 +142,7 @@ const Qualification = () => {
             }
           >
             <div className="qualification__data">
-              <div>
+              <motion.div variants={staggerVariants}>
                 <h3 className="qualification__title">10th Class</h3>
                 <span className="qualification__subtitle">
                   St.Patrick Hr. Sec. School - Pondicherry
@@ -133,7 +151,7 @@ const Qualification = () => {
                   <i className="uil uil-calendar-alt"> </i>
                   2011 - 2012
                 </div>
-              </div>
+              </motion.div>
 
               <div>
                 <span className="qualification__rounder"></span>
@@ -147,7 +165,7 @@ const Qualification = () => {
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-              <div>
+              <motion.div variants={staggerVariantsRight}>
                 <h3 className="qualification__title">12th Class</h3>
                 <span className="qualification__subtitle">
                   St.Patrick Hr. Sec. School - Pondicherry
@@ -156,11 +174,11 @@ const Qualification = () => {
                   <i className="uil uil-calendar-alt"> </i>
                   2013 - 2014
                 </div>
-              </div>
+              </motion.div>
             </div>
 
             <div className="qualification__data">
-              <div>
+              <motion.div variants={staggerVariants}>
                 <h3 className="qualification__title">B.E - EEE</h3>
                 <span className="qualification__subtitle">
                   St.Joseph's College of Engineering - Chennai
@@ -169,7 +187,7 @@ const Qualification = () => {
                   <i className="uil uil-calendar-alt"> </i>
                   2014 - 2018
                 </div>
-              </div>
+              </motion.div>
               <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
@@ -178,7 +196,7 @@ const Qualification = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
