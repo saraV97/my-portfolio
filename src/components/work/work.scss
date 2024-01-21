@@ -12,8 +12,12 @@
 
 .work__img {
   width: 350px;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
   margin-bottom: var(--mb-1);
+  transition: 0.3s;
+}
+.work__card:hover .work__img {
+  border-radius: 1rem;
 }
 
 .work__title {

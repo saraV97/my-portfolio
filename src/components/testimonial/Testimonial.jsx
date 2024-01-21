@@ -9,14 +9,33 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
+import { delay, motion } from "framer-motion";
+import { titleVariants, titleVariants1 } from "../animation/Animation";
+
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 const Testimonial = () => {
   return (
     <section className="testimonial container section">
-      <h2 className="section__title">My clients say</h2>
-      <span className="section__subtitle">Testimonial</span>
+      <motion.h2
+        className="section__title"
+        variants={titleVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
+        My clients say
+      </motion.h2>
+      <motion.span
+        className="section__subtitle"
+        variants={titleVariants1}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
+        Testimonial
+      </motion.span>
 
       <Swiper
         className="testimonial__container"
@@ -25,6 +44,10 @@ const Testimonial = () => {
         spaceBetween={24}
         pagination={{
           clickable: true,
+        }}
+        autoplay={{
+          delay: 2500,
+          pauseOnMouseEnter: true,
         }}
         breakpoints={{
           576: {
@@ -35,7 +58,7 @@ const Testimonial = () => {
             spaceBetween: 48,
           },
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
       >
         {Data.map(({ id, image, title, description }) => {
           return (

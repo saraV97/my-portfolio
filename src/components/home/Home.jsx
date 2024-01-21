@@ -32,12 +32,14 @@ const imagePopVariant = {
     scale: 1,
     transition: {
       duration: 0.5,
-      delay: 1,
+      delay: 1.3,
       ease: [0, 0.71, 0.2, 1.01],
     },
   },
 };
 const Home = () => {
+  // const renderLetters = ()
+
   return (
     <section className="home section" id="home">
       <div className="home__container container grid">

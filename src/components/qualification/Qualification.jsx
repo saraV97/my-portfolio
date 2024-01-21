@@ -32,29 +32,35 @@ const Qualification = () => {
 
       <div className="qualification__container container">
         <motion.div className="qualification__tabs" variants={titleVariants}>
-          <div
+          <motion.div
             className={
               toggleState === 1
                 ? "qualification__button qualification__active button--flex"
                 : "qualification__button button--flex"
             }
             onClick={() => toggleTab(1)}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 200, damping: 17 }}
           >
             <i className="uil uil-graduation-cap qualification__icon"></i>
             Experience
-          </div>
+          </motion.div>
 
-          <div
+          <motion.div
             className={
               toggleState === 2
                 ? "qualification__button qualification__active button--flex"
                 : "qualification__button button--flex"
             }
             onClick={() => toggleTab(2)}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 200, damping: 17 }}
           >
             <i className="uil uil-briefcase-alt qualification__icon"></i>
             Education
-          </div>
+          </motion.div>
         </motion.div>
         <div className="qualification__sections">
           <div

@@ -27,7 +27,7 @@ const Data = () => {
       // transition={{ duration: 0.5, delay: 0.25 }}
     >
       <motion.h1 className="home__title" variants={textVariants}>
-        Hey, I'm Saravanan
+        Hi there, I'm Saravanan
         <svg
           width="36"
           height="36"

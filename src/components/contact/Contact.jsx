@@ -3,6 +3,9 @@ import React from "react";
 import "./contact.scss";
 import emailjs from "@emailjs/browser";
 
+import { motion } from "framer-motion";
+import { titleVariants, titleVariants1 } from "../animation/Animation";
+
 const Contact = () => {
   const form = useRef();
 
@@ -20,8 +23,24 @@ const Contact = () => {
 
   return (
     <section className="contact section" id="contact">
-      <h2 className="section__title">Get in touch</h2>
-      <span className="section__subtitle">Contact Me</span>
+      <motion.h2
+        className="section__title"
+        variants={titleVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
+        Get in touch
+      </motion.h2>
+      <motion.span
+        className="section__subtitle"
+        variants={titleVariants1}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
+        Contact Me
+      </motion.span>
 
       <div className="contact__container container grid">
         <div className="contact__content">

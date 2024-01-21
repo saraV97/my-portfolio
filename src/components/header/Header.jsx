@@ -15,28 +15,34 @@ const Header = () => {
           <ul className="nav__list grid">
             <li className="nav__item">
               <a href="#home" className="nav__link">
-                <i className="uil uil-estate nav__icon" /> Home
+                <i className="uil uil-estate nav__icon" />
+
+                <span className="fill-up">Home</span>
               </a>
             </li>
             <li className="nav__item">
               <a href="#about" className="nav__link">
-                <i className="uil uil-user nav__icon" /> About
+                <i className="uil uil-user nav__icon" />
+                <span className="fill-up">About</span>
               </a>
             </li>
             <li className="nav__item">
               <a href="#skills" className="nav__link">
-                <i className="uil uil-file-alt nav__icon" /> Skills
+                <i className="uil uil-file-alt nav__icon" />
+                <span className="fill-up">Skills</span>
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#portfolio" className="nav__link">
-                <i className="uil uil-scenery nav__icon" /> Portfolio
+                <i className="uil uil-scenery nav__icon" />
+                <span className="fill-up">Portfolio</span>
               </a>
             </li>
             <li className="nav__item">
               <a href="#services" className="nav__link">
-                <i className="uil uil-briefcase-alt nav__icon" /> Services
+                <i className="uil uil-briefcase-alt nav__icon" />
+                <span className="fill-up">Services</span>
               </a>
             </li>
             {/* <li className="nav__item">
@@ -46,7 +52,8 @@ const Header = () => {
             </li>*/}
             <li className="nav__item">
               <a href="#contact" className="nav__link">
-                <i className="uil uil-message nav__icon" /> Contact
+                <i className="uil uil-message nav__icon" />
+                <span className="fill-up">Contact</span>
               </a>
             </li>
           </ul>
