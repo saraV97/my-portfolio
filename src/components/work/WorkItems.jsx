@@ -18,7 +18,7 @@ const WorkItems = ({ item }) => {
         transition={{ damping: 5, stiffness: 100 }}
       />
       <h3 className="work__title">{item.title}</h3>
-      <a href="" className="work__button">
+      <a href={item.link} className="work__button">
         Demo <i className="bx bx-right-arrow-alt work__button-icon"></i>
       </a>
     </motion.div>
