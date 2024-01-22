@@ -1,12 +1,57 @@
 import { useState } from "react";
 import "./header.scss";
+import { motion } from "framer-motion";
+// import { topDownVariants1 } from "../animation/Animation";
+import { useMediaQuery } from "@mui/material";
 
 const Header = () => {
+  const useIsMedium = () => useMediaQuery("(min-width: 768px)");
+  const isSmall = useIsMedium();
+  const topDownVariants1 = isSmall
+    ? {
+        initial: {
+          y: -50,
+          opacity: 0,
+        },
+        animate: {
+          y: 0,
+          opacity: 1,
+          transition: {
+            duration: 0.5,
+            delay: 0.8,
+            ease: [0.42, 0, 1, 1],
+            //   staggerChildren: 0.1,
+          },
+        },
+      }
+    : {
+        initial: {
+          y: 0,
+          opacity: 0,
+        },
+        animate: {
+          y: 0,
+          opacity: 1,
+          transition: {
+            duration: 0.5,
+            delay: 0.8,
+            ease: [0.42, 0, 1, 1],
+            //   staggerChildren: 0.1,
+          },
+        },
+      };
   /*-----togle menu-----*/
   const [Toggle, showMenu] = useState(false);
+
   return (
     <header className="header">
-      <nav className="nav container">
+      <motion.nav
+        className="nav container"
+        variants={topDownVariants1}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
         <a href="index.html" className="nav__logo">
           Sara
         </a>
@@ -65,7 +110,7 @@ const Header = () => {
         <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
           <i className="uil uil-apps"></i>
         </div>
-      </nav>
+      </motion.nav>
     </header>
   );
 };

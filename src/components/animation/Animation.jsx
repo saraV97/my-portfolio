@@ -1,3 +1,5 @@
+import { easeIn } from "framer-motion";
+
 const topDownVariants = {
   initial: {
     y: -50,
@@ -8,6 +10,23 @@ const topDownVariants = {
     opacity: 1,
     transition: {
       duration: 0.4,
+      //   staggerChildren: 0.1,
+    },
+  },
+};
+
+const topDownVariants1 = {
+  initial: {
+    y: -50,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      delay: 0.8,
+      ease: easeIn,
       //   staggerChildren: 0.1,
     },
   },
@@ -101,4 +120,5 @@ export {
   staggerVariants,
   staggerVariantsRight,
   topDownVariants,
+  topDownVariants1,
 };

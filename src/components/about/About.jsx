@@ -3,10 +3,13 @@ import "./about.scss";
 import AboutImg from "../../assets/Screenshot_20220318-182050~2.jpg";
 import CV from "../../assets/John-Cv.pdf";
 import Info from "./info";
-import { animate, delay, motion } from "framer-motion";
+import { animate, delay, motion, useScroll, useTransform } from "framer-motion";
 import { titleVariants } from "../animation/Animation";
 
 const About = () => {
+  const { scrollYProgress } = useScroll();
+  const x = useTransform(scrollYProgress, [0, 1], [1200, -14000]);
+
   return (
     <motion.section
       className="about section"
@@ -82,6 +85,15 @@ const About = () => {
             </svg>
           </motion.a>
         </div>
+        <motion.div
+          className="slidingText__container"
+          style={{ x }}
+          // variants={sliderVariants}
+          // initial="initial"
+          // animate="animate"
+        >
+          Web Developer Designer
+        </motion.div>
       </div>
     </motion.section>
   );

@@ -1,5 +1,10 @@
+"use client";
+
 import React from "react";
+// import { useEffect, useRef } from "react";
+
 import { motion } from "framer-motion";
+// import gsap from "gsap";
 
 const textVariants = {
   initial: {
@@ -18,9 +23,41 @@ const textVariants = {
 };
 
 const Data = () => {
+  // const component = useRef(null);
+  // useEffect(() => {
+  //   let ctx = gsap.context(() => {
+  //     const tl = gsap.timeline();
+  //     tl.fromTo(
+  //       "h1",
+  //       {
+  //         X: -100,
+  //         opacity: 0,
+  //         rotate: -10,
+  //       },
+  //       {
+  //         X: 0,
+  //         opacity: 1,
+  //         rotate: 0,
+  //       }
+  //     );
+  //   }, component);
+  //   return () => ctx.revert();
+  // }, []);
+
+  // const renderLetters = (name, key) => {
+  //   if (!name) return;
+  //   return name.split("").map((letter, index) => (
+  //     <span key={index} className="name-animation gname__anim">
+  //       {letter}
+  //     </span>
+  //   ));
+  // };
+
   return (
     <motion.div
       className="home__data"
+      // ref={component}
+
       variants={textVariants}
       initial="initial"
       animate="animate"
@@ -28,6 +65,7 @@ const Data = () => {
     >
       <motion.h1 className="home__title" variants={textVariants}>
         Hi there, I'm Saravanan
+        {/* {renderLetters("Hi there, I'm Saravanan")} */}
         <svg
           width="36"
           height="36"

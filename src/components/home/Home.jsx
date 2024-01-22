@@ -4,21 +4,21 @@ import "./home.scss";
 import Social from "./Social";
 import Data from "./Data";
 import ScrollDown from "./ScrollDown";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
-const sliderVariants = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: "-220%",
-    transition: {
-      repeat: Infinity,
-      repeatType: "mirror",
-      duration: 10,
-    },
-  },
-};
+// const sliderVariants = {
+//   initial: {
+//     x: 0,
+//   },
+//   animate: {
+//     x: "-220%",
+//     transition: {
+//       repeat: Infinity,
+//       repeatType: "mirror",
+//       duration: 10,
+//     },
+//   },
+// };
 
 // variants={fadeInAnimationVariants1}
 //           initial="initial"
@@ -38,7 +38,8 @@ const imagePopVariant = {
   },
 };
 const Home = () => {
-  // const renderLetters = ()
+  // const { scrollYProgress } = useScroll();
+  // const x = useTransform(scrollYProgress, [0, 1], [-200, -30000]);
 
   return (
     <section className="home section" id="home">
@@ -56,9 +57,10 @@ const Home = () => {
         <ScrollDown />
         {/* <motion.div
           className="slidingText__container"
-          variants={sliderVariants}
-          initial="initial"
-          animate="animate"
+          style={{ x }}
+          // variants={sliderVariants}
+          // initial="initial"
+          // animate="animate"
         >
           Web Developer Designer
         </motion.div> */}

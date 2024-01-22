@@ -1,3 +1,7 @@
+.home {
+  position: relative;
+  overflow: hidden;
+}
 .home__container {
   row-gap: 7rem;
 }
@@ -21,6 +25,11 @@
 .home__social-icon:hover {
   color: var(--title-color-dark);
 }
+
+// .gname__anim {
+//   display: inline-block;
+//   opacity: 0;
+// }
 
 .home__title {
   font-size: var(--big-font-size);
@@ -112,20 +121,24 @@
   transform: translateY(0.25rem);
 }
 
-.slidingText__container {
-  position: absolute;
-  font-size: 35vh;
-  bottom: -120px;
-  // right: 0px;
-  white-space: nowrap;
-  color: #29242436;
-  z-index: -99;
-  width: 50%;
-  font-weight: bold;
+// .slidingText__container {
+//   position: absolute;
+//   font-size: 17em;
+//   bottom: -80px;
+//   // right: 0px;
+//   white-space: nowrap;
+//   color: #29242436;
+//   z-index: -2;
+//   margin: 0;
+//   margin-top: auto;
+//   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 
-  // overflow: hidden;
-  // text-overflow: clip;
-}
+//   // width: 50%;
+//   font-weight: bold;
+
+//   // overflow: hidden;
+//   // text-overflow: clip;
+// }
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
