@@ -1,6 +1,6 @@
-import Work1 from "../../assets/screely-1705935551938.png";
-import Work2 from "../../assets/Work2.jpg";
-import Work3 from "../../assets/Work3.jpg";
+import Work1 from "../../assets/frame_safari_dark.png";
+import Work2 from "../../assets/frame_generic_dark.png";
+import Work3 from "../../assets/frame_generic_dark.png";
 import Work4 from "../../assets/Work4.jpg";
 import Work5 from "../../assets/Work5.jpg";
 
@@ -15,9 +15,9 @@ export const projectsData = [
   {
     id: 2,
     image: Work2,
-    title: "Hotstar Clone",
+    title: "Disney+ Clone",
     category: "app",
-    link: "https://nike-clone-sara.web.app/",
+    link: "https://d-landing.web.app/",
   },
   {
     id: 3,
@@ -29,15 +29,15 @@ export const projectsData = [
   {
     id: 4,
     image: Work4,
-    title: "Battery Shop",
+    title: "Battery Cart (WIP)",
     category: "app",
-    link: "https://nike-clone-sara.web.app/",
+    link: "",
   },
   {
     id: 5,
     image: Work5,
-    title: "Fertilizer Shop",
+    title: "Fertilizer Gok (WIP)",
     category: "web",
-    link: "https://nike-clone-sara.web.app/",
+    link: "",
   },
 ];
