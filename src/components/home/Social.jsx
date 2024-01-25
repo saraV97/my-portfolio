@@ -24,7 +24,7 @@ const Social = () => {
       animate="animate"
     >
       <motion.a
-        href="https://linkedin.com/"
+        href="www.linkedin.com/in/saravanan-velou"
         className="home__social-icon"
         target="_blank"
         variants={socialVariants}
@@ -36,7 +36,7 @@ const Social = () => {
       </motion.a>
 
       <motion.a
-        href="https://github.com/"
+        href="https://github.com/saraV97"
         className="home__social-icon"
         target="_blank"
         variants={socialVariants}
@@ -48,7 +48,7 @@ const Social = () => {
       </motion.a>
 
       <motion.a
-        href="https://www.instagram.com/"
+        href="https://www.instagram.com/saravanan__vs/"
         className="home__social-icon"
         target="_blank"
         variants={socialVariants}

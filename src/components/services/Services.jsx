@@ -58,7 +58,7 @@ const Services = () => {
           <div>
             <i className="uil uil-arrow services__icon"></i>
             <h3 className="services__title">
-              UI / UX <br /> Design
+              Website <br /> Maintenance
             </h3>
           </div>
         </motion.div>

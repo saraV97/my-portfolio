@@ -1,14 +1,14 @@
 import React from "react";
 import "./about.scss";
 import AboutImg from "../../assets/Screenshot_20220318-182050~2.jpg";
-import CV from "../../assets/John-Cv.pdf";
+import CV from "../../assets/Sara-Cv.pdf";
 import Info from "./info";
 import { animate, delay, motion, useScroll, useTransform } from "framer-motion";
 import { titleVariants } from "../animation/Animation";
 
 const About = () => {
   const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0, 1], [1200, -14000]);
+  const x = useTransform(scrollYProgress, [0, 1], [1600, -14500]);
 
   return (
     <motion.section
@@ -49,6 +49,15 @@ const About = () => {
             <br />I specialize in crafting elevated, intuitive designs for
             startups and small businesses to help them stand out in the digital
             landscape with a powerful impact. 😎
+            <br />
+            From responsive designs to e-commerce integration, I bring a
+            strategic approach to web development, ensuring seamless user
+            experiences.
+            <br />
+            <br />
+            Beyond my endeavors in web development, I find solace and creativity
+            in the realm of music production by experimenting with new genres or
+            simply losing myself in the harmonies.
           </motion.p>
 
           <motion.a
