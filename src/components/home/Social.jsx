@@ -24,7 +24,7 @@ const Social = () => {
       animate="animate"
     >
       <motion.a
-        href="www.linkedin.com/in/saravanan-velou"
+        href="https://www.linkedin.com/in/saravanan-velou"
         className="home__social-icon"
         target="_blank"
         variants={socialVariants}

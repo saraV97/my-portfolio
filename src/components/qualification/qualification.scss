@@ -73,6 +73,11 @@
 
 /*=============== BREAKPOINTS ===============*/
 
+@media screen and (max-width: 992px) {
+  .qualification__container {
+    max-width: 992px;
+  }
+}
 @media screen and (max-width: 576px) {
   // .qualification__title {
   //   font-size: 0.67rem;

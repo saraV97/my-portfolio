@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 
 const WorkItems = ({ item }) => {
   return (
+    <div><a href={item.link}>
+  
     <motion.div
       className="work__card"
       key={item.id}
@@ -22,6 +24,8 @@ const WorkItems = ({ item }) => {
         View <i className="bx bx-right-arrow-alt work__button-icon"></i>
       </a>
     </motion.div>
+    </a>
+    </div>
   );
 };
 

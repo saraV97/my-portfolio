@@ -28,7 +28,7 @@ const Footer = () => {
         </ul>
         <div className="footer__social">
           <a
-            href="www.linkedin.com/in/saravanan-velou"
+            href="https://www.linkedin.com/in/saravanan-velou"
             className="footer__social-link"
             target="_blank"
           >
