@@ -42,6 +42,29 @@
   transform: translateX(0.25rem);
 }
 
+.work_tech{
+border-radius:  0.2rem;
+font-size: 12px;
+color: var(--text-color);
+padding-left: 3px;
+padding-right: 3px;
+// padding-right: 0.2rem;
+}
+.tech_border{
+border-radius: 0.3rem;
+border: 1px solid hsl(var(--hue), var(--sat), 80%);
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  margin-bottom: 0.1rem;
+  display: inline-block;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {

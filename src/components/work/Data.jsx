@@ -2,42 +2,74 @@ import Work1 from "../../assets/frame_safari_dark.png";
 import Work2 from "../../assets/frame_generic_dark.png";
 import Work3 from "../../assets/frame_generic_light (1).png";
 import Work4 from "../../assets/Work4.jpg";
-import Work5 from "../../assets/Work5.jpg";
-
+// import Work5 from "../../assets/Work5.jpg";
+import Work6 from "../../assets/krishiagro.jpeg";
 export const projectsData = [
   {
     id: 1,
+    image: Work6,
+    title: "Krishi Agro Industry",
+    category: "web",
+    link: "https://www.krishiagro.in/",
+    stack1: "NextJs",
+    stack2: "Javascript",
+    stack3: "Tailwind",
+    stack4: "FramerMotion",
+  },
+  {
+    id: 2,
+    image: Work1,
+    title: "Zen Homestay",
+    category: "web",
+    link: "https://test-zen-homestay.web.app/",
+    stack1: "Reactjs",
+    stack2: "Javascript",
+    stack3: "Tailwind",
+    stack4: "Firebase",
+  },
+  {
+    id: 3,
     image: Work1,
     title: "Nike homepage clone",
     category: "web",
     link: "https://nike-clone-sara.web.app/",
+    stack1: "Reactjs",
+    stack2: "Tailwind",
+    stack3: "FramerMotion",
+    stack4: "Firebase",
   },
   {
-    id: 2,
+    id: 4,
     image: Work2,
     title: "Disney+ Clone",
     category: "app",
     link: "https://d-landing.web.app/",
+    stack1: "ReactJs",
+    stack2: "Firebase",
+    stack3: "StyledComponents",
+    stack4: "Redux",
   },
   {
-    id: 3,
+    id: 5,
     image: Work3,
     title: "Image-Gallery",
     category: "design",
     link: "https://image-gallery-2d1bc.web.app/",
+    stack1: "ReactJS",
+    stack2: "Nodejs",
+    stack3: "MongoDB",
+    stack4: "Css",
   },
   {
-    id: 4,
+    id: 6,
     image: Work4,
     title: "Battery Cart (WIP)",
     category: "app",
     link: "",
-  },
-  {
-    id: 5,
-    image: Work5,
-    title: "Fertilizer Gok (WIP)",
-    category: "web",
-    link: "",
+    stack1: "--",
+    stack2: "--",
+    stack3: "--",
+    stack4: "--",
+    stack5: "--",
   },
 ];

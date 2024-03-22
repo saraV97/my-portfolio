@@ -59,15 +59,6 @@ const Frontend = () => {
               <span className="skills__level">Intemediate</span>
             </div>
           </motion.div>
-
-          <motion.div className="skills__data" variants={staggerVariants}>
-            <i class="bx bxs-badge-check"></i>
-
-            <div>
-              <h3 className="skills__name">Python</h3>
-              <span className="skills__level">Intemediate</span>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </div>
