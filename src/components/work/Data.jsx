@@ -2,7 +2,7 @@ import Work1 from "../../assets/frame_safari_dark.png";
 import Work2 from "../../assets/frame_generic_dark.png";
 import Work3 from "../../assets/frame_generic_light (1).png";
 import Work4 from "../../assets/Work4.jpg";
-// import Work5 from "../../assets/Work5.jpg";
+import Work5 from "../../assets/zenhomestay.jpeg";
 import Work6 from "../../assets/krishiagro.jpeg";
 export const projectsData = [
   {
@@ -18,7 +18,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    image: Work1,
+    image: Work5,
     title: "Zen Homestay",
     category: "web",
     link: "https://test-zen-homestay.web.app/",

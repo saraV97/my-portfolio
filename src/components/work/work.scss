@@ -23,7 +23,7 @@
 .work__title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  margin-bottom: var(--mb-0-5);
+  margin-bottom: 0.2rem;
 }
 .work__button {
   color: var(--text-color);
@@ -31,6 +31,7 @@
   display: flex;
   align-items: center;
   column-gap: 0.25rem;
+  margin-top: 0.4rem;
 }
 
 .work__button-icon {
@@ -38,7 +39,7 @@
   transition: 0.4s;
 }
 
-.work__button:hover .work__button-icon {
+.work__card:hover .work__button-icon {
   transform: translateX(0.25rem);
 }
 

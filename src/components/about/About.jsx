@@ -66,7 +66,7 @@ const About = () => {
             className="button button--flex"
             variants={titleVariants}
           >
-            Download CV
+            Resume
             <svg
               class="button__icon"
               xmlns="http://www.w3.org/2000/svg"
