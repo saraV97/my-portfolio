@@ -4,6 +4,7 @@ import Work3 from "../../assets/frame_generic_light (1).png";
 import Work4 from "../../assets/Work4.jpg";
 import Work5 from "../../assets/zenhomestay.jpeg";
 import Work6 from "../../assets/krishiagro.jpeg";
+import Work7 from "../../assets/fixerr.png";
 export const projectsData = [
   {
     id: 1,
@@ -26,6 +27,17 @@ export const projectsData = [
     stack2: "Javascript",
     stack3: "Tailwind",
     stack4: "Firebase",
+  },
+  {
+    id: 1,
+    image: Work7,
+    title: "Fixer Home Services",
+    category: "web",
+    link: "https://fixerr-saras-projects-8152d2ea.vercel.app/",
+    stack1: "NextJs",
+    stack2: "MongoBD",
+    stack3: "Tailwind",
+    stack4: "ReactJs",
   },
   {
     id: 3,

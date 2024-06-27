@@ -11,6 +11,8 @@
   font-weight: var(--font-medium);
   color: var(--title-color);
   margin: 0 var(--mb-1);
+  padding-left: 7px;
+  padding-right: 7px;
   cursor: pointer;
 }
 .qualification__button:hover {
@@ -22,9 +24,16 @@
   margin-right: var(--mb-0-25);
 }
 
+.qualification__icon_border {
+    border-radius: 1rem;
+    border-bottom: 0.5px solid hsl(var(--hue), var(--sat), 60%); 
+    // border-top: 0.5px solid hsl(var(--hue), var(--sat), 60%);  
+    
+}
+
 .qualification__active {
   color: var(--title-color-dark);
-  text-shadow: 7px 9px 13px rgba(0, 0, 0, 0.64);
+  text-shadow: 2px 2px 5px rgba(92, 92, 92, 0.64);
 }
 .qualification__sections {
   display: grid;

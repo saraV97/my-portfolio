@@ -35,22 +35,22 @@ const Qualification = () => {
           <motion.div
             className={
               toggleState === 1
-                ? "qualification__button qualification__active button--flex"
-                : "qualification__button button--flex"
+                ? "qualification__button qualification__active button--flex qualification__icon_border"
+                : "qualification__button button--flex "
             }
             onClick={() => toggleTab(1)}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 200, damping: 17 }}
           >
-            <i className="uil uil-graduation-cap qualification__icon"></i>
+            <i className="uil uil-graduation-cap qualification__icon "></i>
             Experience
           </motion.div>
 
           <motion.div
             className={
               toggleState === 2
-                ? "qualification__button qualification__active button--flex"
+                ? "qualification__button qualification__active button--flex qualification__icon_border"
                 : "qualification__button button--flex"
             }
             onClick={() => toggleTab(2)}
